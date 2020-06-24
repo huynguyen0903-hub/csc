@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: "Sulphur Point", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+span:hover {
+  text-decoration: none;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+.order-main {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-attachment: fixed;
+}
+
+.container {
+  height: 100%;
+}
+.open {
+  position: fixed;
+  z-index: 1;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  color: white;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.form-wrap:hover {
+  border: 2px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: ease-in-out 0.7s;
+}
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+.table-wrap {
+  margin-top: 60px;
+}
+table {
+  border-radius: 7px;
+}
+.box {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 350px;
+  height: 350px;
+}
+.box:hover {
+  box-shadow: 0 6px 13px 0 lightgray;
+}
+.box img {
+  width: 100%;
+}
+
+tr:hover {
+  color: white;
+  background-color: #333;
+  transition: ease 0.5s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.view-main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+.fa-bars {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#trash,
+#edit {
+  font-size: 20px;
+  margin-right: 10px;
+}
+#order input[type="text"],
+input[type="number"] {
+  color: black;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
